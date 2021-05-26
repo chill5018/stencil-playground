@@ -1,14 +1,16 @@
 <template>
-  <img class="logo" alt="Vue logo" src="./assets/logo.png">
-  <MyComponent first="firstProperty" middle="Middle Name" last="Doe" />
-  <div class="container">
-    <div v-for="index in 1000" :key="index">
-      <MyCard
-        img="https://miro.medium.com/max/3200/1*-zkpV1IfOv-1dux6ZqWBCQ.png"
-        top="Hello World"
-        subtitle="TypeScript"
-        :meta="{master: index%2 === 0, explicit: index%3 === 0, label: '1995'}"
-      />
+  <div>
+    <img class="logo" alt="Vue logo" src="./assets/logo.png">
+    <MyComponent first="firstProperty" middle="Middle Name" last="Doe" />
+    <div class="container">
+      <div v-for="index in 1000" :key="index">
+        <MyCard
+          img="https://miro.medium.com/max/3200/1*-zkpV1IfOv-1dux6ZqWBCQ.png"
+          top="Hello World"
+          subtitle="TypeScript"
+          :meta="{master: index%2 === 0, explicit: index%3 === 0, label: '1995'}"
+        />
+      </div>
     </div>
   </div>
 </template>
