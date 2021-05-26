@@ -1,6 +1,6 @@
 import { css } from '@emotion/css';
 import { MyCard } from 'stencil-demo-react';
-
+import logo from '../logo.svg';
 export const Landing = () => {
   return (
     <div
@@ -8,6 +8,7 @@ export const Landing = () => {
         margin-top: 24px;
       `}
     >
+      <img src={logo} alt="logo" className={css`height: 120px; width: 100%; margin-bottom: 40px; text-align: center;`} />
       <div className={css`
         display: grid;
         gap: 8px;
