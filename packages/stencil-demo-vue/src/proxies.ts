@@ -5,8 +5,9 @@ import { defineContainer } from './vue-component-lib/utils';
 
 import type { JSX } from 'stencil-demo';
 
+import { applyPolyfills, defineCustomElements } from 'stencil-demo/loader';
 
-
+applyPolyfills().then(() => defineCustomElements());
 
 export const MyBadge = /*@__PURE__*/ defineContainer<JSX.MyBadge>('my-badge', [
   'variant'

@@ -3,7 +3,7 @@
   "sideEffects": false,
   "version": "0.0.4",
   "private": true,
-  "description": "Vue specific wrapper for stencl-demo",
+  "description": "Vue specific wrapper for stencil-demo",
   "scripts": {
     "test": "jest",
     "build": "npm run clean && npm run compile",
@@ -27,11 +27,11 @@
   },
   "dependencies": {
     "@vue/test-utils": "^1.0.3",
-    "component-library": "^0.0.4",
-    "vue": "^2.6.11",
-    "vue-class-component": "^7.2.3",
+    "stencil-demo": "^0.0.1",
+    "vue": "^3.0.0",
+    "vue-class-component": "^8.0.0-0",
     "vue-jest": "^3.0.5",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "jest": {
     "preset": "ts-jest",

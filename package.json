@@ -5,14 +5,16 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "react-demo": "lerna exec --scope react-app -- yarn",
-    "vue-demo": "lerna exec --scope vue-app -- yarn",
+    "react-app": "lerna exec --scope react-app -- yarn",
+    "vue-app": "lerna exec --scope vue-app -- yarn",
     "stencil-demo": "lerna exec --scope stencil-demo -- yarn",
     "stencil-demo-react": "lerna exec --scope stencil-demo-react -- yarn",
     "stencil-demo-vue": "lerna exec --scope stencil-demo-vue -- yarn",
-    "build:stencil": "yarn stencil-demo build && yarn stencil-demo-react build && yarn stencil-demo-build build"
+    "build:stencil": "yarn stencil-demo build && yarn stencil-demo-react build && yarn stencil-demo-vue build"
   },
   "devDependencies": {
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
     "lerna": "^4.0.0",
     "typescript": "4.2.4"
   },

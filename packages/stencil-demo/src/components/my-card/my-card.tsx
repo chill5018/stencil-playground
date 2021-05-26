@@ -22,9 +22,9 @@ export class MyCard {
         <span class="card-title">{this.top}</span>
         <span class="card-subtitle">{this.subtitle}</span>
         <div class="card-meta">
-          {this.meta.explicit && <my-badge variant="explicit">Explicit</my-badge>}
-          {this.meta.master && <my-badge variant="master">Master</my-badge>}
-          <span>{this.meta.label}</span>
+          {this.meta?.explicit && <my-badge variant="explicit">Explicit</my-badge>}
+          {this.meta?.master && <my-badge variant="master">Master</my-badge>}
+          <span>{this.meta?.label}</span>
         </div>
         <slot></slot>
         </div>

@@ -24,6 +24,8 @@ export const config: Config = {
       componentCorePackage: 'stencil-demo',
       proxiesFile: '../stencil-demo-vue/src/proxies.ts',
       componentModels: vueComponentModels,
+      includeDefineCustomElements: true,
+      includePolyfills: true
     }),
     {
       type: 'dist',

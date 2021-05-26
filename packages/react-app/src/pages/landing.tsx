@@ -1,5 +1,5 @@
 import { css } from '@emotion/css';
-import { MyCard, MyComponent } from 'stencil-demo-react';
+import { MyCard } from 'stencil-demo-react';
 
 export const Landing = () => {
   return (
