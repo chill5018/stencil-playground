@@ -1,0 +1,26 @@
+{
+  "name": "polyglot-ds",
+  "description": "a playground for experimenting with web components",
+  "main": "lib/bundle.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "react-demo": "lerna exec --scope react-app -- yarn",
+    "vue-demo": "lerna exec --scope vue-app -- yarn",
+    "stencil-demo": "lerna exec --scope stencil-demo -- yarn",
+    "stencil-demo-react": "lerna exec --scope stencil-demo-react -- yarn",
+    "stencil-demo-vue": "lerna exec --scope stencil-demo-vue -- yarn",
+    "build:stencil": "yarn stencil-demo build && yarn stencil-demo-react build && yarn stencil-demo-build build"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "typescript": "4.2.4"
+  },
+  "workspaces": [
+    "packages/react-app",
+    "packages/stencil-demo",
+    "packages/stencil-demo-react",
+    "packages/stencil-demo-vue",
+    "packages/vue-app"
+  ]
+}

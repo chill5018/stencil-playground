@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "baseUrl": ".",
+    "paths": {
+      "stencil-demo": ["./packages/stencil-demo"],
+      "stencil-demo/loader": ["./packages/stencil-demo/dist/loader/index.cjs.js"],
+    },
+    "target": "ES2017" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */,
+    "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    "lib": [
+      "es2017",
+      "DOM"
+    ] /* Specify library files to be included in the compilation. */,
+    "allowJs": true /* Allow javascript files to be compiled. */,
+    // "checkJs": true,                       /* Report errors in .js files. */
+    "jsx": "react" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
+    "declaration": true /* Generates corresponding '.d.ts' file. */,
+    // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
+    "sourceMap": true /* Generates corresponding '.map' file. */,
+    /* Strict Type-Checking Options */
+    "strict": true /* Enable all strict type-checking options. */,
+    /* Additional Checks */
+    "noUnusedLocals": true /* Report errors on unused locals. */,
+    "noUnusedParameters": true /* Report errors on unused parameters. */,
+    "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+    /* Module Resolution Options */
+    "typeRoots": [
+      "node_modules/@types",
+      "src/typings",
+      "./node_modules/@types"
+    ] /* List of folders to include type definitions from. */,
+    "types": [
+      "jest",
+      "node",
+    ] /* Type declaration files to be included in compilation. */,
+    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+
+    /* Advanced Options */
+    "forceConsistentCasingInFileNames": false /* Disallow inconsistently-cased references to the same file. */,
+    /* Debugging Options */
+    "traceResolution": false /* Report module resolution log messages. */,
+    "listEmittedFiles": false /* Print names of generated files part of the compilation. */,
+    "listFiles": false /* Print names of files part of the compilation. */,
+    "pretty": true /* Stylize errors and messages using color and context. */,
+    "resolveJsonModule": true,
+
+    "skipLibCheck": true,
+  },
+  "exclude": [
+    "node_modules",
+    "lib"
+  ],
+  "plugins": [
+    {
+      "name": "typescript-styled-plugin"
+    }
+  ]
+}
