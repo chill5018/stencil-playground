@@ -2,11 +2,12 @@
   <img class="logo" alt="Vue logo" src="./assets/logo.png">
   <MyComponent first="firstProperty" middle="Middle Name" last="Doe" />
   <div class="container">
-    <div v-for="index in 10" :key="index">
+    <div v-for="index in 1000" :key="index">
       <MyCard
         img="https://miro.medium.com/max/3200/1*-zkpV1IfOv-1dux6ZqWBCQ.png"
         top="Hello World"
         subtitle="TypeScript"
+        :meta="{master: index%2 === 0, explicit: index%3 === 0, label: '1995'}"
       />
     </div>
   </div>
@@ -24,14 +25,7 @@ import { MyCard, MyComponent } from 'stencil-demo-vue';
     MyComponent,
   },
 })
-export default class App extends Vue {
-  // eslint-disable-next-line class-methods-use-this
-  data(): { items: number[] } {
-    return {
-      items: [0, 1, 2, 3, 4, 5, 6],
-    };
-  }
-}
+export default class App extends Vue {}
 </script>
 
 <style>

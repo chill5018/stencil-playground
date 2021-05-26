@@ -38,7 +38,7 @@
 .card-meta {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: minmax(min-content, 100%);
+  grid-auto-columns: min-content;
   align-items: center;
   gap: 8px;
 }
